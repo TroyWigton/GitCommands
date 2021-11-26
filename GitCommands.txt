@@ -1,0 +1,73 @@
+//  CLONE A REPO
+******************
+git clone <ssh key or https>
+git clone -b <branchName> --single-branch <ssh key>
+git clone -b <branchName> <ssh key> (clones entire repo and checks out  specified branch)
+
+// CHECKOUT (SWITCH TO) A BRANCH
+******************
+git checkout <branch>
+git checkout <filename> (resets file to last commit version)
+git checkout . (resets only on current directory and below)
+git checkout -b <newBranchName> <fromBranchName> (creates new branch from another)
+
+// RESETING CHANGES 
+*********************
+git reset --hard (resets all modified files)
+git reset . (removes staged files in current directory)
+
+// BRANCH VIEW AND MANIPULAITON
+*****************************
+git branch  (for local branches)
+git branch -a (shows all branches including tracked remotes)
+git branch -d <branchName> (deletes branch)
+git branch -D <branchName> (deletes and unmerged branch)
+git push origin --delete <branchName> (deletes remote branch)
+
+// FETCH / PULL / PUSH
+*****************************
+git fetch (downloads branches and commits from upstream repo)
+git pull (pulls changes from remote repo into current branch)
+git pull . <branchName> (pulls from local branch)
+git push . <branch_A>:<branch_B> (push to local branch)
+
+// STAGING FILE CHANGES FOR COMMIT
+****************************
+git add -A  (stage all changes)
+git add -u (add all modified files, ignoring untracked files)
+
+// COMMITING CHANGES
+****************************
+git commit -a (stages all modified and deleted files, does not include untracked files)
+git commit --amend (to ammend the last commit message if the commit hasn't yet been pushed)
+
+CREATE AND ADD A REMOTE REPO
+****************************
+git init --bare <remote repo name>
+cd <local repo path>
+git remote add <origin(Alias)> <path or URL to remote>
+git remote -v (shows origin alias and path)
+*** git pull origin master --allow-unrelated-histories  (optional: pull in any items before pushing)
+git push -u <origin(Alias)> <branchName> (sets upstream tracking branch and pushes to it)
+git branch -a (shows the new remote branch being tracked)
+git remote remove <originAlias> (removes remote from local)
+
+// STASHING CHANGES SO YOU CAN CHECKOUT ANOTHER BRANCH WIHTOUT COMMITING THOSE CHANGES
+*****************************************
+git stash
+git checkout -b <branchName>
+git stash list (shows stashes)
+git stash pop (applies last stash)
+
+// GIT STATUS 
+****************************
+git status (shows status of current branch)
+git status -uno (only shows modified repo items, not untracked files; means untracked=no)
+git status .  (shows only the status of the current directory files)
+git status "<*textToMatch*>
+
+git ls-files <*filenames*>  (shows files tracked by git)
+
+https://devconnected.com/how-to-compare-two-git-branches/
+git diff <branch1>..<branch2> (compare the differences between the two branches.)
+git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) with the common ancestor of the two branches.)
