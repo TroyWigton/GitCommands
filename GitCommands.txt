@@ -27,6 +27,7 @@ git push origin --delete <branchName> (deletes remote branch)
 // FETCH / PULL / PUSH
 *****************************
 git fetch (downloads branches and commits from upstream repo)
+git fetch -p (The -p flag means "prune". After fetching, branches which no longer exist on the remote will be deleted.)
 git pull (pulls changes from remote repo into current branch)
 git pull . <branchName> (pulls from local branch)
 git push . <branch_A>:<branch_B> (push to local branch)
