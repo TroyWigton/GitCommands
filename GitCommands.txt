@@ -13,8 +13,10 @@ git checkout -b <newBranchName> <fromBranchName> (creates new branch from anothe
 
 // RESETING CHANGES 
 *********************
+git clean -f (remove untracked files)
 git reset --hard (resets all modified files)
 git reset . (removes staged files in current directory)
+git reset HEAD~1 --soft  (in case you have not pushed the commit publicly yet: your commit changes will be in your working directory, whereas the LAST commit will be removed from your current branch.)
 
 // BRANCH VIEW AND MANIPULAITON
 *****************************
