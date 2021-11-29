@@ -69,8 +69,14 @@ git status -uno (only shows modified repo items, not untracked files; means untr
 git status .  (shows only the status of the current directory files)
 git status "<*textToMatch*>
 
+// FILE & FOLDER OPERATIONS
+***************************
 git ls-files <*filenames*>  (shows files tracked by git)
+git mv <oldFilename> <newFilename>
+git rm <oldFilename>
 
+// DIFF FILES AND BRANCHES
+**************************
 https://devconnected.com/how-to-compare-two-git-branches/
 git diff <branch1>..<branch2> (compare the differences between the two branches.)
 git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) with the common ancestor of the two branches.)
