@@ -13,6 +13,8 @@ git checkout -b <newBranchName> <fromBranchName> (creates new branch from anothe
 
 // RESETING CHANGES 
 *********************
+https://opensource.com/article/18/6/git-reset-revert-rebase-commands
+
 git clean -f (remove untracked files)
 git reset --hard (resets all modified files)
 git reset . (removes staged files in current directory)
