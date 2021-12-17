@@ -34,6 +34,7 @@ git fetch (downloads branches and commits from upstream repo)
 git fetch -p (The -p flag means "prune". After fetching, branches which no longer exist on the remote will be deleted.)
 git pull (pulls changes from remote repo into current branch)
 git pull . <branchName> (pulls from local branch)
+git pull --squash . <branch> (pulls committed changes from <branch> into another branch without any of <branch> commit log.  Leaves the deltas staged)
 git push . <branch_A>:<branch_B> (push to local branch)
 
 // STAGING FILE CHANGES FOR COMMIT
