@@ -25,7 +25,7 @@ git reset HEAD~1 --soft  (in case you have not pushed the commit publicly yet: y
 git branch  (for local branches)
 git branch -a (shows all branches including tracked remotes)
 git branch -d <branchName> (deletes branch)
-git branch -D <branchName> (deletes and unmerged branch)
+git branch -D <branchName> (deletes an unmerged branch)
 git push origin --delete <branchName> (deletes remote branch)
 
 // FETCH / PULL / PUSH
