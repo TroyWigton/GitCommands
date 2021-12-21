@@ -37,6 +37,7 @@ git pull . <branchName> (pulls from local branch)
 git pull --squash . <branch> (pulls committed changes from <branch> into another branch without any of <branch> commit log.  Leaves the deltas staged)
 git push . <branch_A>:<branch_B> (push to local branch)
 git push -d origin <branch> deletes origin branch
+ git push --force-with-lease <branch> (push ammended commit message to remote)
 
 // STAGING FILE CHANGES FOR COMMIT
 ****************************
