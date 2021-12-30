@@ -48,6 +48,7 @@ git add -u (add all modified files, ignoring untracked files)
 ****************************
 git commit -a (stages all modified and deleted files, does not include untracked files)
 git commit --amend (to ammend the last commit message if the commit hasn't yet been pushed)
+git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
 
 CREATE AND ADD A REMOTE REPO
 ****************************
