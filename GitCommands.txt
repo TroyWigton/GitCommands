@@ -8,6 +8,7 @@ git clone -b <branchName> <ssh key> (clones entire repo and checks out  specifie
 ******************
 git checkout <branch>
 git checkout <filename> (resets file to last commit version)
+git checkout <commit> <filename> (checks out filename from specific commit)
 git checkout . (resets only on current directory and below)
 git checkout -b <newBranchName> <fromBranchName> (creates new branch from another)
 
