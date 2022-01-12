@@ -87,3 +87,6 @@ git rm <oldFilename>
 https://devconnected.com/how-to-compare-two-git-branches/
 git diff <branch1>..<branch2> (compare the differences between the two branches.)
 git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) with the common ancestor of the two branches.)
+
+git show <commit>  (shows all changes made in commit, from a diff perspective)
+git diff-tree --no-commit-id --name-only -r <commit> (shows the file paths of all files changed in commit)
