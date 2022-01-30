@@ -1,6 +1,6 @@
 //  CLONE A REPO
 ******************
-git clone <ssh key or https>
+git clone <ssh key or https> <AliasRepoName for folder>
 git clone -b <branchName> --single-branch <ssh key>
 git clone -b <branchName> <ssh key> (clones entire repo and checks out  specified branch)
 
