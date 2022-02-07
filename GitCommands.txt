@@ -90,3 +90,7 @@ git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) 
 
 git show <commit>  (shows all changes made in commit, from a diff perspective)
 git diff-tree --no-commit-id --name-only -r <commit> (shows the file paths of all files changed in commit)
+
+// LOG
+**************************
+git log --all --decorate --oneline --graph (git ADOG acronym)
