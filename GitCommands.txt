@@ -23,8 +23,10 @@ git reset HEAD~1 --soft  (in case you have not pushed the commit publicly yet: y
 
 // BRANCH VIEW AND MANIPULAITON
 *****************************
-git branch  (for local branches)
-git branch -a (shows all branches including tracked remotes)
+git branch  (displays local branches)
+git branch -a (displays all branches including tracked remotes)
+git branch -m <oldName> <newName> (renames local branch)
+git branch -m <newName> (renames current branch)
 git branch -d <branchName> (deletes branch)
 git branch -D <branchName> (deletes an unmerged branch)
 git push origin --delete <branchName> (deletes remote branch)
