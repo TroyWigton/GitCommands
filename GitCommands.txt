@@ -7,6 +7,7 @@ git clone -b <branchName> <ssh key> (clones entire repo and checks out  specifie
 // CHECKOUT (SWITCH TO) A BRANCH
 ******************
 git checkout <branch>
+git checkout -b <branchName> (creates new branch)
 git checkout <filename> (resets file to last commit version)
 git checkout <commit> <filename> (checks out filename from specific commit)
 git checkout . (resets only on current directory and below)
@@ -67,7 +68,6 @@ git remote remove <originAlias> (removes remote from local)
 // STASHING CHANGES SO YOU CAN CHECKOUT ANOTHER BRANCH WIHTOUT COMMITING THOSE CHANGES
 *****************************************
 git stash
-git checkout -b <branchName>
 git stash list (shows stashes)
 git stash pop (applies last stash)
 
