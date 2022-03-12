@@ -39,7 +39,7 @@ git branch -d <branchName> (deletes branch)
 git branch -D <branchName> (deletes an unmerged branch)
 git push origin --delete <branchName> (deletes remote branch)
 
-// FETCH / PULL / PUSH
+// FETCH / PULL / PUSH / CHERRY-PICK
 *****************************
 git fetch (downloads branches and commits from upstream repo)
 git fetch -p (The -p flag means "prune". After fetching, branches which no longer exist on the remote will be deleted.)
@@ -49,6 +49,8 @@ git pull --squash . <branch> (pulls committed changes from <branch> into another
 git push . <branch_A>:<branch_B> (push to local branch)
 git push -d origin <branch> deletes origin branch
 git push --force-with-lease <branch> (push ammended commit message to remote)
+
+git cherry-pick <commitID> (merges a specific commit)
 
 // STAGING FILE CHANGES FOR COMMIT
 ****************************
