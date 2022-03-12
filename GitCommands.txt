@@ -13,14 +13,21 @@ git checkout <commit> <filename> (checks out filename from specific commit)
 git checkout . (resets only on current directory and below)
 git checkout -b <newBranchName> <fromBranchName> (creates new branch from another)
 
+// MERGE CONFLICT RESOLUTION
+******************
+git checkout --ours <fileName>
+git checkout --theirs <fileName>
+
+
 // RESETING CHANGES 
 *********************
 https://opensource.com/article/18/6/git-reset-revert-rebase-commands
 
-git clean -f (remove untracked files)
-git reset --hard (resets all modified files)
 git reset . (removes staged files in current directory)
-git reset HEAD~1 --soft  (in case you have not pushed the commit publicly yet: your commit changes will be in your working directory, whereas the LAST commit will be removed from your current branch.)
+git reset <commitRef> (reset branch tip to commitRef and leave modified files unstaged)
+git reset --soft <commitRef> (reset branch tip to commitRef and leave modified files staged)
+git reset --hard <commitRef> (reset branch tip to commitRef and reset files to commitRef)
+git reset --hard (resets all modified files)
 
 // BRANCH VIEW AND MANIPULAITON
 *****************************
@@ -41,7 +48,7 @@ git pull . <branchName> (pulls from local branch)
 git pull --squash . <branch> (pulls committed changes from <branch> into another branch without any of <branch> commit log.  Leaves the deltas staged)
 git push . <branch_A>:<branch_B> (push to local branch)
 git push -d origin <branch> deletes origin branch
- git push --force-with-lease <branch> (push ammended commit message to remote)
+git push --force-with-lease <branch> (push ammended commit message to remote)
 
 // STAGING FILE CHANGES FOR COMMIT
 ****************************
@@ -84,6 +91,7 @@ git status "<*textToMatch*>
 git ls-files <*filenames*>  (shows files tracked by git)
 git mv <oldFilename> <newFilename>
 git rm <oldFilename>
+git clean -f (remove untracked files)
 
 // DIFF FILES AND BRANCHES
 **************************
@@ -97,6 +105,7 @@ git diff-tree --no-commit-id --name-only -r <commit> (shows the file paths of al
 // LOG
 **************************
 git log --all --decorate --oneline --graph (git ADOG acronym)
+git log -<N> (shows last N log entries)
 
 // CONFIG
 **************************
