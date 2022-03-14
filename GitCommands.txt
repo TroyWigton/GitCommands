@@ -1,11 +1,15 @@
+//  INITIALIZE A NEW REPOSITORY
+*******************************************
+git init (adds the .git folder in current directory)
+
 //  CLONE A REPO
-******************
+*******************************************
 git clone <ssh key or https> <AliasRepoName for folder>
 git clone -b <branchName> --single-branch <ssh key>
 git clone -b <branchName> <ssh key> (clones entire repo and checks out  specified branch)
 
 // CHECKOUT (SWITCH TO) A BRANCH
-******************
+*******************************************
 git checkout <branch>
 git checkout -b <branchName> (creates new branch)
 git checkout <filename> (resets file to last commit version)
@@ -15,13 +19,13 @@ git checkout . (resets only on current directory and below)
 git checkout -b <newBranchName> <fromBranchName> (creates new branch from another)
 
 // MERGE CONFLICT RESOLUTION
-******************
+*******************************************
 git checkout --ours <fileName>
 git checkout --theirs <fileName>
 
 
 // RESETING CHANGES 
-*********************
+*******************************************
 https://opensource.com/article/18/6/git-reset-revert-rebase-commands
 
 git reset . (removes staged files in current directory)
@@ -32,7 +36,7 @@ git reset --hard <commitRef> (reset branch tip to commitRef and reset files to c
 git reset --hard (resets all modified files)
 
 // BRANCH VIEW AND MANIPULAITON
-*****************************
+*******************************************
 git branch  (displays local branches)
 git branch -a (displays all branches including tracked remotes)
 git branch -m <oldName> <newName> (renames local branch)
@@ -42,7 +46,7 @@ git branch -D <branchName> (deletes an unmerged branch)
 git push origin --delete <branchName> (deletes remote branch)
 
 // FETCH / PULL / PUSH / CHERRY-PICK
-*****************************
+*******************************************
 git fetch (downloads branches and commits from upstream repo)
 git fetch -p (The -p flag means "prune". After fetching, branches which no longer exist on the remote will be deleted.)
 git pull (pulls changes from remote repo into current branch)
@@ -55,19 +59,19 @@ git push --force-with-lease <branch> (push ammended commit message to remote)
 git cherry-pick <commitID> (merges a specific commit)
 
 // STAGING FILE CHANGES FOR COMMIT
-****************************
+*******************************************
 git add -A  (stage all changes)
 git add -u (add all modified files, ignoring untracked files)
 
 // COMMITING CHANGES
-****************************
+*******************************************
 git commit -a (stages all modified and deleted files, does not include untracked files)
 git commit -m "Commit Message"
 git commit --amend (to ammend the last commit message if the commit hasn't yet been pushed)
 git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
 
 CREATE AND ADD A REMOTE REPO
-****************************
+*******************************************
 git init --bare <remote repo name>
 cd <local repo path>
 git remote add <origin(Alias)> <path or URL to remote>
@@ -78,27 +82,27 @@ git branch -a (shows the new remote branch being tracked)
 git remote remove <originAlias> (removes remote from local)
 
 // STASHING CHANGES SO YOU CAN CHECKOUT ANOTHER BRANCH WIHTOUT COMMITING THOSE CHANGES
-*****************************************
+*******************************************
 git stash
 git stash list (shows stashes)
 git stash pop (applies last stash)
 
 // GIT STATUS 
-****************************
+*******************************************
 git status (shows status of current branch)
 git status -uno (only shows modified repo items, not untracked files; means untracked=no)
 git status .  (shows only the status of the current directory files)
 git status "<*textToMatch*>
 
 // FILE & FOLDER OPERATIONS
-***************************
+*******************************************
 git ls-files <*filenames*>  (shows files tracked by git)
 git mv <oldFilename> <newFilename>
 git rm <oldFilename>
 git clean -f (remove untracked files)
 
 // DIFF FILES AND BRANCHES
-**************************
+*******************************************
 https://devconnected.com/how-to-compare-two-git-branches/
 git diff <branch1>..<branch2> (compare the differences between the two branches.)
 git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) with the common ancestor of the two branches.)
@@ -108,11 +112,11 @@ git diff --staged <filename> (shows diff for stated files)
 git show <commit>  (shows all changes made in commit, from a diff perspective)
 
 // LOG
-**************************
+*******************************************
 git log --all --decorate --oneline --graph (git ADOG acronym)
 git log -<N> (shows last N log entries)
 
 // CONFIG
-**************************
+*******************************************
 git config --global core.editor nedit
 git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
