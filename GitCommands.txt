@@ -24,9 +24,11 @@ git checkout --ours <fileName>
 git checkout --theirs <fileName>
 
 
-// RESETING CHANGES 
+// RESETING / REVERTING CHANGES 
 *******************************************
 https://opensource.com/article/18/6/git-reset-revert-rebase-commands
+(File level and commit level checkout/reset differences in behavior)
+https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
 
 git reset . (removes staged files in current directory)
 git reset <commitRef> (reset branch tip to commitRef and leave modified files unstaged)
@@ -34,6 +36,8 @@ git reset <commitRef> <fileName> (Leaves fileName staged at commitRef version an
 git reset --soft <commitRef> (reset branch tip to commitRef and leave modified files staged)
 git reset --hard <commitRef> (reset branch tip to commitRef and reset files to commitRef)
 git reset --hard (resets all modified files)
+
+git revert HEAD (makes a new commit reverting the previous commit)
 
 // BRANCH VIEW AND MANIPULAITON
 *******************************************
