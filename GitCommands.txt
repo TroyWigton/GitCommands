@@ -119,6 +119,11 @@ git show <commit>  (shows all changes made in commit, from a diff perspective)
 *******************************************
 git log --all --decorate --oneline --graph (git ADOG acronym)
 git log -<N> (shows last N log entries)
+git log -- <file1> <file2> <fileN> (Shows the logs relating to the listed files)
+git log -S"String To Search" (searches for commits that have text specified with string)
+git log -G"RegularExpression" (searches for commits that have text specified with string)
+git log --stat (displays the number of insertions and deletions to each file altered by each commit)
+git shortlog (a shorter display of the log entries)
 
 // CONFIG
 *******************************************
