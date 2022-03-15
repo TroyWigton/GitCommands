@@ -117,6 +117,7 @@ git diff <branch1>...<branch2> -- <filename>  (compares just the file named.  Th
 git diff-tree --no-commit-id --name-only -r <commit> (shows the file paths of all files changed in commit)
 git diff --staged <filename> (shows diff for stated files)
 git show <commit>  (shows all changes made in commit, from a diff perspective)
+git show <commit> <file> | git apply (applies changes made in file at commit to current)
 
 // LOG
 *******************************************
