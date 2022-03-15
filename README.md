@@ -1,2 +1,2 @@
 # GitCommands
-A log of useful git commands
+A compilation of useful git commands
