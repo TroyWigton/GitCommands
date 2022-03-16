@@ -136,3 +136,9 @@ git reflog (displays the history of HEAD pointer)
 *******************************************
 git config --global core.editor nedit
 git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++.exe" -multiInst -notabbar -nosession -noPlugin
+
+// ATTRIBUTES
+*******************************************
+https://git-scm.com/book/id/v2/Kostumisasi-Git-Git-Attributes
+https://git-scm.com/docs/gitattributes
+
