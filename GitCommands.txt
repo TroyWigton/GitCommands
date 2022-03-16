@@ -27,8 +27,10 @@ git checkout --theirs <fileName>
 
 // RESETING / REVERTING CHANGES 
 *******************************************
+
 https://opensource.com/article/18/6/git-reset-revert-rebase-commands
-(File level and commit level checkout/reset differences in behavior)
+
+(The differences in behavior between 'file level' and 'commit level' uses of checkout/reset)
 https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting
 
 git reset . (removes staged files in current directory)
