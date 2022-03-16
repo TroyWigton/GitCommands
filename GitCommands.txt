@@ -130,6 +130,7 @@ git log -S"String To Search" (searches for commits that have text specified with
 git log -G"RegularExpression" (searches for commits that have text specified with string)
 git log --stat (displays the number of insertions and deletions to each file altered by each commit)
 git shortlog (a shorter display of the log entries)
+git reflog (displays the history of HEAD pointer)
 
 // CONFIG
 *******************************************
