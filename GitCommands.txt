@@ -36,9 +36,9 @@ git reset <commitRef> (reset branch tip to commitRef and leave modified files un
 git reset <commitRef> <fileName> (Leaves fileName staged at commitRef version and also modified to its pre-reset state.)
 git reset --soft <commitRef> (reset branch tip to commitRef and leave modified files staged)
 git reset --hard <commitRef> (reset branch tip to commitRef and reset files to commitRef)
-git reset --hard (resets all modified files)
+git reset --hard (resets all modified files to their HEAD version)
 
-git revert HEAD (makes a new commit reverting the previous commit)
+git revert HEAD -n (reverts the previous commit and stages the changes ready with a revert log message upon next commit)
 
 // BRANCH VIEW AND MANIPULAITON
 *******************************************
