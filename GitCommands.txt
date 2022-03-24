@@ -145,3 +145,7 @@ git config --global core.editor "C:\Program Files (x86)\Notepad++\notepad++.exe"
 https://git-scm.com/book/id/v2/Kostumisasi-Git-Git-Attributes
 https://git-scm.com/docs/gitattributes
 
+// MISC RESOURCES
+*******************************************
+https://stackoverflow.com/questions/2304087/what-is-head-in-git
+
