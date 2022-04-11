@@ -67,7 +67,7 @@ git push --force-with-lease <branch> (push ammended commit message to remote)
 git push origin --delete <branchName> (deletes remote branch)
 
 git cherry-pick <commitID> (merges a specific commit)
-git cherry-pick <commitId> --no-commiit (perform merge but stop before making the commit)
+git cherry-pick <commitId> --no-commit (perform merge but stop before making the commit)
 
 https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging
 git pull <branch> <-Xignore-all-space or -Xignore-space-change> (The first option ignores whitespace completely when comparing lines, the second treats sequences of one or more whitespace characters as equivalent.)
