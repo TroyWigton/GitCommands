@@ -111,8 +111,9 @@ git status "<*textToMatch*>
 // FILE & FOLDER OPERATIONS
 *******************************************
 git ls-files <*filenames*>  (shows files tracked by git)
-git mv <oldFilename> <newFilename>
-git rm <oldFilename>
+git mv <oldFilename> <newFilename> (deletes file and adds file with new name, stages both changes for commit)
+git rm <Filename>  (deletes file and stages the removal change for commit)
+git rm --cached <filename> (stages a deletion of the file from the repo for commit, while leaving the file undeleted)
 git clean -f (remove untracked files)
 
 // DIFF FILES AND BRANCHES / SHOW
