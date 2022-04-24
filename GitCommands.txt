@@ -97,9 +97,16 @@ git remote remove <originAlias> (removes remote from local)
 
 // STASHING CHANGES SO YOU CAN CHECKOUT ANOTHER BRANCH WIHTOUT COMMITING THOSE CHANGES
 *******************************************
-git stash
+git stash (stashes all tracked file changes)
+git stash save <message>  (add a message to the stash event)
+git stash -u (include untracked files in the stash)
+git stash show (shows the changes in the latest stash)
+git stash branch <branchName> <stashID> (create a new branch to apply your stashed changes to and then pop your stashed changes onto it)
 git stash list (shows stashes)
 git stash pop (applies last stash)
+git stash drop <stash_id> (remove the specific stash_id from the stash list)
+git stash clear (remove all stashed items)
+git stash apply stash@{#} (# is a stack number as indicated from 'git stash list')
 
 // GIT STATUS 
 *******************************************
