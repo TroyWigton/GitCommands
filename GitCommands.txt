@@ -74,13 +74,13 @@ git pull <branch> <-Xignore-all-space or -Xignore-space-change> (The first optio
 
 // STAGING FILE CHANGES FOR COMMIT
 *******************************************
-git add -A  (stage all changes)
-git add -u (add all modified files, ignoring untracked files)
+git add -A (stage all changes, including untracked files)
+git add -u (stage all tracked items, ignoring untracked files)
 
 // COMMITING CHANGES
 *******************************************
-git commit -a (stages all modified and deleted files, does not include untracked files)
-git commit -m "Commit Message"
+git commit -a (stages and commits all tracked file changes, does not include untracked files)
+git commit -m "commit message"
 git commit --amend (to ammend the last commit message if the commit hasn't yet been pushed)
 git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
 
@@ -113,7 +113,7 @@ git stash apply stash@{#} (# is a stack number as indicated from 'git stash list
 git status (shows status of current branch)
 git status -uno (only shows modified repo items, not untracked files; means untracked=no)
 git status .  (shows only the status of the current directory files)
-git status "<*textToMatch*>
+git status "*textToMatch*" (only shows files with matching text)
 
 // FILE & FOLDER OPERATIONS
 *******************************************
