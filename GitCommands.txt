@@ -143,6 +143,7 @@ git log -- <file1> <file2> <fileN> (Shows the logs relating to the listed files)
 git log -S"String To Search" (searches for commits that have text specified with string)
 git log -G"RegularExpression" (searches for commits that have text specified with string)
 git log --stat (displays the number of insertions and deletions to each file altered by each commit)
+git log --raw -<N>  (show the last N logs, showing the files added to each commit)
 git shortlog (a shorter display of the log entries)
 
 git reflog (displays the history of HEAD pointer)
