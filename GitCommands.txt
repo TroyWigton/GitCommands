@@ -46,6 +46,7 @@ git revert HEAD -n (reverts the previous commit and stages the changes ready wit
 *******************************************
 git branch  (displays local branches)
 git branch -a (displays all branches including tracked remotes)
+git branch -a | grep <name>
 git branch -m <oldName> <newName> (renames local branch)
 git branch -m <newName> (renames current branch)
 git branch -d <branchName> (deletes branch)
