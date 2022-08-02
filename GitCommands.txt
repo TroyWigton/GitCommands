@@ -64,7 +64,7 @@ git pull <branch> --no-commiit (perform merge but stop before making the commit)
 
 git push . <branch_A>:<branch_B> (push to local branch)
 git push -d origin <branch> deletes origin branch
-git push --force-with-lease <branch> (push ammended commit message to remote)
+git push --force-with-lease <branch> (push amended commit message to remote)
 git push origin --delete <branchName> (deletes remote branch)
 
 git cherry-pick <commitID> (merges a specific commit)
@@ -82,7 +82,7 @@ git add -u (stage all tracked items, ignoring untracked files)
 *******************************************
 git commit -a (stages and commits all tracked file changes, does not include untracked files)
 git commit -m "commit message"
-git commit --amend (to ammend the last commit message if the commit hasn't yet been pushed)
+git commit --amend (to amend the last commit message if the commit hasn't yet been pushed)
 git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
 
 CREATE AND ADD A REMOTE REPO
