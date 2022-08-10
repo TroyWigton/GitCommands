@@ -12,6 +12,7 @@ git clone -b <branchName> <ssh key> (clones entire repo and checks out  specifie
 // CHECKOUT (SWITCH TO) A BRANCH
 *******************************************
 git checkout <branch>
+git checkout <branch> -- <directory or file>  (checkout the directory or file from branch or commit)
 git checkout -b <branchName> (creates new branch)
 git checkout <filename> (hard resets modified unstaged file to HEAD version. Losing any uncommited modifications)
 git checkout <commit> (detached HEAD state)
