@@ -126,6 +126,7 @@ git mv <oldFilename> <newFilename> (deletes file and adds file with new name, st
 git rm <Filename>  (deletes file and stages the removal change for commit)
 git rm --cached <filename> (stages a deletion of the file from the repo for commit, while leaving the file undeleted)
 git clean -f (remove untracked files)
+git clean -fd (remove untracked folders too)
 
 // DIFF FILES AND BRANCHES / SHOW
 *******************************************
