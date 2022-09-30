@@ -155,6 +155,15 @@ git shortlog (a shorter display of the log entries)
 
 git reflog (displays the history of HEAD pointer)
 
+// BLAME
+*******************************************
+git blame <filename>
+git blame -L <startline>, <endline> (shows who changed what between start and end line)
+
+// BISECT
+*******************************************
+https://git-scm.com/docs/git-bisect
+
 // CONFIG
 *******************************************
 git config --global core.editor nedit
