@@ -97,6 +97,7 @@ git remote -v (shows origin alias and path)
 git push -u <origin(Alias)> <branchName> (sets upstream tracking branch and pushes to it)
 git branch -a (shows the new remote branch being tracked)
 git remote remove <originAlias> (removes remote from local)
+git remote prune <originName> (delete references to non-existing remote branches)
 
 // STASHING CHANGES SO YOU CAN CHECKOUT ANOTHER BRANCH WIHTOUT COMMITING THOSE CHANGES
 *******************************************
