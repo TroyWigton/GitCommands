@@ -85,6 +85,7 @@ git add -u (stage all tracked items, ignoring untracked files)
 git commit -a (stages and commits all tracked file changes, does not include untracked files)
 git commit -m "commit message"
 git commit --amend (to amend the last commit message if the commit hasn't yet been pushed)
+git commit --allow-empty -m <"Empty-Commit">  (making an empty commit)
 git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
 
 CREATE AND ADD A REMOTE REPO
