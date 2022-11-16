@@ -161,6 +161,7 @@ git reflog (displays the history of HEAD pointer)
 *******************************************
 git blame <filename>
 git blame -L <startline>, <endline> (shows who changed what between start and end line)
+git blame <filename> | sort | grep <text>  (returns date sorted text modifications found in filename)
 
 // BISECT
 *******************************************
