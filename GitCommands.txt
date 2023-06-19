@@ -149,6 +149,7 @@ git show <commit> <file> | git apply (applies changes made in file at commit to 
 git log --all --decorate --oneline --graph (git ADOG acronym)
 git log -<N> (shows last N log entries)
 git log -- <file1> <file2> <fileN> (Shows the logs relating to the listed files)
+git log --color --graph <branch> -- <filename> (Show logs affecting file from branch) (https://stackoverflow.com/questions/68289950/show-git-log-for-a-file-from-a-specific-branch)
 git log -S"String To Search" (searches for commits that have text specified with string)
 git log -G"RegularExpression" (searches for commits that have text specified with string)
 git log --stat (displays the number of insertions and deletions to each file altered by each commit)
@@ -156,7 +157,6 @@ git log --raw -<N>  (show the last N logs, showing the files added to each commi
 git log --oneline <filename> (Shows a oneline log of changes to filename)
 git log -p -<N> <commit> <path> (Shows an inline diff from the last N commits from <commit> to <path>)
 git shortlog (a shorter display of the log entries)
-
 git reflog (displays the history of HEAD pointer)
 
 // BLAME
