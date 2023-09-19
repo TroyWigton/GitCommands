@@ -138,8 +138,7 @@ git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) 
 git diff <branch1>...<branch2> -- <filename>  (compares just the file named.  The -- indicates the end of command line flags.)
 git diff-tree --no-commit-id --name-only -r <commit> (shows the file paths of all files changed in commit)
 git diff --staged <filename> (shows diff for stated files)
-git diff 
---name-status <commit1>..<commit2> (shows the files changed between two commits or branches)
+git diff --name-status <commit1>..<commit2> (shows the files changed between two commits or branches)
 
 git show <commit>  (shows all changes made in commit, from a diff perspective)
 git show <commit> <file> | git apply (applies changes made in file at commit to current)
