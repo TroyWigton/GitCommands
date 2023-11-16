@@ -157,6 +157,7 @@ git log --oneline <filename> (Shows a oneline log of changes to filename)
 git log -p -<N> <commit> <path> (Shows an inline diff from the last N commits from <commit> to <path>)
 git shortlog (a shorter display of the log entries)
 git reflog (displays the history of HEAD pointer)
+git log --no-merges <branch1> ^<branch2> (shows commits specific to branch1 not including branch2, without merge commits, can list multiple branches)
 
 // BLAME
 *******************************************
