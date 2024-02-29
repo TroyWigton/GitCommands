@@ -46,6 +46,7 @@ git revert -no-commit <ref> (reverts the commit and leaves changes staged, not c
 git revert <ref> (creates a new commit that reverts the changes in ref)
 git revert <ref1> <ref2> (reverts ref1 and ref2)
 git revert <ref1>..<ref2> (reverts ref1 through ref2)
+git revert -m 1 <ref> (reverts a merge commit relative to mainline parent number 1, required for reverting merge commits)
 
 // BRANCH VIEW AND MANIPULAITON
 *******************************************
