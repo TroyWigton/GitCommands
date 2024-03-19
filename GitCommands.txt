@@ -58,15 +58,15 @@ git branch -m <newName> (renames current branch)
 git branch -d <branchName> (deletes branch)
 git branch -D <branchName> (deletes an unmerged branch)
 
-// FETCH / PULL / PUSH / CHERRY-PICK
+// FETCH / MERGE / PUSH / CHERRY-PICK
 *******************************************
 git fetch (downloads branches and commits from upstream repo)
 git fetch -p (The -p flag means "prune". After fetching, branches which no longer exist on the remote will be deleted.)
 
-git pull (pulls changes from remote repo branch into local branch.)
-git pull . <branchName> (pulls from local branch)
-git pull --squash . <branch> (pulls committed changes from local <branch> into another branch without any of <branch> commit log.  Leaves the deltas staged)
-git pull <branch> --no-commiit (perform merge but stop before making the commit)
+git merge (pulls changes from remote repo branch into local branch.)
+git merge . <branchName> (merge from local branch)
+git merge --squash . <branch> (merge committed changes from local <branch> into another branch without any of <branch> commit log.  Leaves the deltas staged)
+git merge <branch> --no-commiit (perform merge but stop before making the commit)
 
 git push . <branch_A>:<branch_B> (push to local branch)
 git push -d origin <branch> deletes origin branch
