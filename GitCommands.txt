@@ -162,6 +162,7 @@ git log -p -<N> <commit> <path> (Shows an inline diff from the last N commits fr
 git shortlog (a shorter display of the log entries)
 git reflog (displays the history of HEAD pointer)
 git log --no-merges <branch1> ^<branch2> (shows commits specific to branch1 not including branch2, without merge commits, can list multiple branches)
+git log --committer="<name>" --no-merges (shows non merge commits by committer)
 
 // BLAME
 *******************************************
