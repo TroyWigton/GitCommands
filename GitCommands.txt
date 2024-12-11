@@ -66,7 +66,7 @@ git fetch -p (The -p flag means "prune". After fetching, branches which no longe
 git merge (pulls changes from remote repo branch into local branch.)
 git merge . <branchName> (merge from local branch)
 git merge --squash . <branch> (merge committed changes from local <branch> into another branch without any of <branch> commit log.  Leaves the deltas staged)
-git merge <branch> --no-commiit (perform merge but stop before making the commit)
+git merge <branch> --no-commit (perform merge but stop before making the commit)
 
 git push . <branch_A>:<branch_B> (push to local branch)
 git push -d origin <branch> deletes origin branch
@@ -91,6 +91,7 @@ git commit -m "commit message"
 git commit --amend (to amend the last commit message if the commit hasn't yet been pushed)
 git commit --allow-empty -m <"Empty-Commit">  (making an empty commit)
 git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
+git commit --allow-empty -m "Empty-Commit"
 
 CREATE AND ADD A REMOTE REPO
 *******************************************
