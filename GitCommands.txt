@@ -89,7 +89,6 @@ git add -u (stage all tracked items, ignoring untracked files)
 git commit -a (stages and commits all tracked file changes, does not include untracked files)
 git commit -m "commit message"
 git commit --amend (to amend the last commit message if the commit hasn't yet been pushed)
-git commit --allow-empty -m <"Empty-Commit">  (making an empty commit)
 git push --force <remoteName (origin)> <branchName> (pushes amended commit message upstream)
 git commit --allow-empty -m "Empty-Commit"
 
@@ -142,7 +141,7 @@ git diff <branch1>..<branch2> (compare the differences between the two branches.
 git diff <branch1>...<branch2> (compares the top of the right branch (the HEAD) with the common ancestor of the two branches.)
 git diff <branch1>...<branch2> -- <filename>  (compares just the file named.  The -- indicates the end of command line flags.)
 git diff-tree --no-commit-id --name-only -r <commit> (shows the file paths of all files changed in commit)
-git diff --staged <filename> (shows diff for stated files)
+git diff --staged <filename> (shows diff for staged files)
 git diff --name-status <commit1>..<commit2> (shows the files changed between two commits or branches)
 git diff --name-only <A>...<B> (finds the common ancestor of commits A and B and compares the changes from that ancestor to commit B. Showing only file name changes.)
 
