@@ -57,6 +57,7 @@ git branch -m <oldName> <newName> (renames local branch)
 git branch -m <newName> (renames current branch)
 git branch -d <branchName> (deletes branch)
 git branch -D <branchName> (deletes an unmerged branch)
+git push <remoteName> --delete <branchName>
 
 // FETCH / MERGE / PUSH / CHERRY-PICK
 *******************************************
