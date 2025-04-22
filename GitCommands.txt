@@ -42,7 +42,7 @@ git reset --hard <commitRef> (reset branch tip to commitRef and reset files to c
 git reset --hard (resets all modified files to their HEAD version)
 git reset --hard origin/<branch>  (updates local to origin version of branch)
 
-git revert -no-commit <ref> (reverts the commit and leaves changes staged, not committed)
+git revert --no-commit <ref> (reverts the commit and leaves changes staged, not committed)
 git revert <ref> (creates a new commit that reverts the changes in ref)
 git revert <ref1> <ref2> (reverts ref1 and ref2)
 git revert <ref1>..<ref2> (reverts ref1 through ref2)
