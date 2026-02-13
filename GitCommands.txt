@@ -114,10 +114,11 @@ git stash push <filename> -m <"stash message"> (pushes the modified filename sta
 git stash show (shows the changes in the latest stash)
 git stash branch <branchName> <stashID> (create a new branch to apply your stashed changes to and then pop your stashed changes onto it)
 git stash list (shows stashes)
-git stash pop (applies last stash)
+git stash pop (applies last stash and removes it from the stash list)
+git stash pop stash@{n}
 git stash drop <stash_id> (remove the specific stash_id from the stash list)
 git stash clear (remove all stashed items)
-git stash apply stash@{#} (# is a stack number as indicated from 'git stash list')
+git stash apply stash@{n} (applies the stash item without popping it off the stash stack)
 
 // GIT STATUS 
 *******************************************
